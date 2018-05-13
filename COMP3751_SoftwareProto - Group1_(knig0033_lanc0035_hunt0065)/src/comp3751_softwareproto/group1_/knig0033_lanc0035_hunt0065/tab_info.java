@@ -17,7 +17,7 @@ public class tab_info extends javax.swing.JFrame {
     public tab_info() {
         initComponents();
     }
-j;
+    j;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
