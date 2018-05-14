@@ -36,15 +36,44 @@ public class Main_JFrame extends javax.swing.JFrame {
         FLINSAFE = new javax.swing.JLabel();
         base_pan = new javax.swing.JPanel();
         security_pan = new javax.swing.JPanel();
+        callsecurity_B = new javax.swing.JButton();
+        medicalass_B = new javax.swing.JButton();
+        emergen_B = new javax.swing.JButton();
+        eventlist_security_JScrollPane = new javax.swing.JScrollPane();
+        eventlist_security_List = new javax.swing.JList<>();
+        eventlist_security_Label = new javax.swing.JLabel();
+        info_security_JScrollPane = new javax.swing.JScrollPane();
+        info_security_Text = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
+        jProgressBar1 = new javax.swing.JProgressBar();
         report_pan = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         info_pan = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         login_pan = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        password_Field = new javax.swing.JPasswordField();
+        logintosystem_b = new javax.swing.JButton();
+        username_Field = new javax.swing.JFormattedTextField();
+        username = new javax.swing.JLabel();
+        password = new javax.swing.JLabel();
+        rightside_login_pan = new javax.swing.JPanel();
+        event_scroll_login_Text = new javax.swing.JTextField();
+        importantnews_login_Label = new javax.swing.JLabel();
+        info_login_JScrollPane = new javax.swing.JScrollPane();
+        info_login_Text = new javax.swing.JTextArea();
+        FLINDERSUNIVERSITY = new javax.swing.JLabel();
         map_pan = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        filter1_map_Check = new javax.swing.JCheckBox();
+        fliter2_map_Check = new javax.swing.JCheckBox();
+        fliter3_map_Check = new javax.swing.JCheckBox();
+        fliter4_map_Check = new javax.swing.JCheckBox();
+        fliter5_map_Check = new javax.swing.JCheckBox();
+        fliter6_map_Check = new javax.swing.JCheckBox();
+        fliters_map_Label = new javax.swing.JLabel();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         events_pan = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
 
@@ -70,6 +99,11 @@ public class Main_JFrame extends javax.swing.JFrame {
         info_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         info_B.setText("Information");
         info_B.setToolTipText("");
+        info_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                info_BActionPerformed(evt);
+            }
+        });
 
         events_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         events_B.setText("Events");
@@ -81,6 +115,11 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         map_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         map_B.setText("Map");
+        map_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                map_BActionPerformed(evt);
+            }
+        });
 
         login_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         login_B.setText("Login");
@@ -95,23 +134,91 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         base_pan.setLayout(new java.awt.CardLayout());
 
-        jLabel1.setText("SECURITY MEMES");
+        callsecurity_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        callsecurity_B.setText("Call Security");
+        callsecurity_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                callsecurity_BActionPerformed(evt);
+            }
+        });
+
+        medicalass_B.setFont(new java.awt.Font("Tahoma", 0, 34)); // NOI18N
+        medicalass_B.setText("Medical Assistance");
+
+        emergen_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        emergen_B.setText("Emergency Services");
+
+        eventlist_security_List.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        eventlist_security_JScrollPane.setViewportView(eventlist_security_List);
+
+        eventlist_security_Label.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        eventlist_security_Label.setLabelFor(eventlist_security_JScrollPane);
+        eventlist_security_Label.setText("                         Event List");
+        eventlist_security_Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        info_security_Text.setColumns(20);
+        info_security_Text.setRows(5);
+        info_security_Text.setText("INFO ABOUT CALLING SECURITY AND SUCH");
+        info_security_JScrollPane.setViewportView(info_security_Text);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setText("Security avaliability at this machine");
+
+        jProgressBar1.setToolTipText("");
 
         javax.swing.GroupLayout security_panLayout = new javax.swing.GroupLayout(security_pan);
         security_pan.setLayout(security_panLayout);
         security_panLayout.setHorizontalGroup(
             security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(security_panLayout.createSequentialGroup()
-                .addGap(353, 353, 353)
-                .addComponent(jLabel1)
-                .addContainerGap(741, Short.MAX_VALUE))
+                .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(security_panLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(medicalass_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(callsecurity_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(security_panLayout.createSequentialGroup()
+                                .addComponent(emergen_B, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(59, 59, 59))
+                    .addGroup(security_panLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(eventlist_security_JScrollPane)
+                    .addComponent(eventlist_security_Label, javax.swing.GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
+                    .addComponent(info_security_JScrollPane))
+                .addContainerGap())
         );
         security_panLayout.setVerticalGroup(
             security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(security_panLayout.createSequentialGroup()
-                .addGap(138, 138, 138)
-                .addComponent(jLabel1)
-                .addContainerGap(340, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, security_panLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(security_panLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(callsecurity_B, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(medicalass_B, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(emergen_B, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(security_panLayout.createSequentialGroup()
+                        .addComponent(info_security_JScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(eventlist_security_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(eventlist_security_JScrollPane)))
+                .addContainerGap())
         );
 
         base_pan.add(security_pan, "card2");
@@ -125,14 +232,14 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(report_panLayout.createSequentialGroup()
                 .addGap(420, 420, 420)
                 .addComponent(jLabel2)
-                .addContainerGap(691, Short.MAX_VALUE))
+                .addContainerGap(711, Short.MAX_VALUE))
         );
         report_panLayout.setVerticalGroup(
             report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(report_panLayout.createSequentialGroup()
                 .addGap(208, 208, 208)
                 .addComponent(jLabel2)
-                .addContainerGap(270, Short.MAX_VALUE))
+                .addContainerGap(312, Short.MAX_VALUE))
         );
 
         base_pan.add(report_pan, "card3");
@@ -146,56 +253,254 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(info_panLayout.createSequentialGroup()
                 .addGap(473, 473, 473)
                 .addComponent(jLabel4)
-                .addContainerGap(654, Short.MAX_VALUE))
+                .addContainerGap(674, Short.MAX_VALUE))
         );
         info_panLayout.setVerticalGroup(
             info_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(info_panLayout.createSequentialGroup()
                 .addGap(192, 192, 192)
                 .addComponent(jLabel4)
-                .addContainerGap(286, Short.MAX_VALUE))
+                .addContainerGap(328, Short.MAX_VALUE))
         );
 
         base_pan.add(info_pan, "card4");
 
-        jLabel5.setText("Login memes");
+        password_Field.setText("jPasswordField1");
+        password_Field.setMargin(new java.awt.Insets(2, 10, 2, 2));
+        password_Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                password_FieldActionPerformed(evt);
+            }
+        });
+
+        logintosystem_b.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        logintosystem_b.setText("LOGIN");
+        logintosystem_b.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logintosystem_bActionPerformed(evt);
+            }
+        });
+
+        username_Field.setText("jFormattedTextField1");
+        username_Field.setFocusable(false);
+        username_Field.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        username_Field.setMargin(new java.awt.Insets(2, 10, 2, 2));
+        username_Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                username_FieldActionPerformed(evt);
+            }
+        });
+
+        username.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        username.setText("Username");
+
+        password.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        password.setText("Password");
+
+        event_scroll_login_Text.setEditable(false);
+        event_scroll_login_Text.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        event_scroll_login_Text.setText("THINGS SCROLL HERE");
+        event_scroll_login_Text.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                event_scroll_login_TextActionPerformed(evt);
+            }
+        });
+
+        importantnews_login_Label.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        importantnews_login_Label.setText("                         IMPORTANT EVENTS");
+        importantnews_login_Label.setToolTipText("");
+        importantnews_login_Label.setAlignmentX(0.5F);
+        importantnews_login_Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        info_login_Text.setEditable(false);
+        info_login_Text.setBackground(new java.awt.Color(240, 240, 240));
+        info_login_Text.setColumns(20);
+        info_login_Text.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        info_login_Text.setRows(2);
+        info_login_Text.setText("I'VE COME OUT OF THE COMPUTER TO TELL YOU TO STOP\n");
+        info_login_Text.setBorder(null);
+        info_login_Text.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        info_login_Text.setFocusable(false);
+        info_login_Text.setOpaque(false);
+        info_login_JScrollPane.setViewportView(info_login_Text);
+
+        FLINDERSUNIVERSITY.setIcon(new javax.swing.ImageIcon(getClass().getResource("/comp3751_softwareproto/group1_/knig0033_lanc0035_hunt0065/WINWORD_2018-05-14_15-04-52.png"))); // NOI18N
+
+        javax.swing.GroupLayout rightside_login_panLayout = new javax.swing.GroupLayout(rightside_login_pan);
+        rightside_login_pan.setLayout(rightside_login_panLayout);
+        rightside_login_panLayout.setHorizontalGroup(
+            rightside_login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(rightside_login_panLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(rightside_login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(event_scroll_login_Text)
+                    .addComponent(importantnews_login_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(info_login_JScrollPane))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rightside_login_panLayout.createSequentialGroup()
+                .addContainerGap(126, Short.MAX_VALUE)
+                .addComponent(FLINDERSUNIVERSITY, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(118, 118, 118))
+        );
+        rightside_login_panLayout.setVerticalGroup(
+            rightside_login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rightside_login_panLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(FLINDERSUNIVERSITY)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addComponent(info_login_JScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(importantnews_login_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(event_scroll_login_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout login_panLayout = new javax.swing.GroupLayout(login_pan);
         login_pan.setLayout(login_panLayout);
         login_panLayout.setHorizontalGroup(
             login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, login_panLayout.createSequentialGroup()
-                .addContainerGap(589, Short.MAX_VALUE)
-                .addComponent(jLabel5)
-                .addGap(530, 530, 530))
+            .addGroup(login_panLayout.createSequentialGroup()
+                .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(login_panLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(password_Field, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(username_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(85, 85, 85))
+                    .addGroup(login_panLayout.createSequentialGroup()
+                        .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(login_panLayout.createSequentialGroup()
+                                .addGap(163, 163, 163)
+                                .addComponent(password))
+                            .addGroup(login_panLayout.createSequentialGroup()
+                                .addGap(160, 160, 160)
+                                .addComponent(username)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(rightside_login_pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44))
         );
         login_panLayout.setVerticalGroup(
             login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(login_panLayout.createSequentialGroup()
-                .addGap(183, 183, 183)
-                .addComponent(jLabel5)
-                .addContainerGap(295, Short.MAX_VALUE))
+                .addGap(46, 46, 46)
+                .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(rightside_login_pan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(login_panLayout.createSequentialGroup()
+                        .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(username_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(password_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(51, 51, 51))
         );
 
         base_pan.add(login_pan, "card5");
 
-        jLabel6.setText("map memes");
+        filter1_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        filter1_map_Check.setText("Fliter6");
+
+        fliter2_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter2_map_Check.setText("Fliter4");
+
+        fliter3_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter3_map_Check.setText("Fliter3");
+        fliter3_map_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fliter3_map_CheckActionPerformed(evt);
+            }
+        });
+
+        fliter4_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter4_map_Check.setText("Fliter5");
+
+        fliter5_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter5_map_Check.setText("Fliter1");
+
+        fliter6_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter6_map_Check.setText("Fliter2");
+
+        fliters_map_Label.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        fliters_map_Label.setText("Filters");
+
+        jFormattedTextField1.setText("Hope and dreams");
+        jFormattedTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFormattedTextField1ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton1.setText("Search");
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/comp3751_softwareproto/group1_/knig0033_lanc0035_hunt0065/chrome_2018-05-14_16-34-48.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel3)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel3)
+        );
 
         javax.swing.GroupLayout map_panLayout = new javax.swing.GroupLayout(map_pan);
         map_pan.setLayout(map_panLayout);
         map_panLayout.setHorizontalGroup(
             map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(map_panLayout.createSequentialGroup()
-                .addGap(450, 450, 450)
-                .addComponent(jLabel6)
-                .addContainerGap(674, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(map_panLayout.createSequentialGroup()
+                        .addComponent(fliters_map_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fliter5_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fliter6_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fliter3_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fliter2_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fliter4_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(filter1_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         map_panLayout.setVerticalGroup(
             map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(map_panLayout.createSequentialGroup()
-                .addGap(218, 218, 218)
-                .addComponent(jLabel6)
-                .addContainerGap(260, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(filter1_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fliter3_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliter2_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliter4_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliter5_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliter6_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliters_map_Label)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(map_panLayout.createSequentialGroup()
+                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(2, 2, 2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         base_pan.add(map_pan, "card6");
@@ -207,7 +512,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         events_panLayout.setHorizontalGroup(
             events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, events_panLayout.createSequentialGroup()
-                .addContainerGap(744, Short.MAX_VALUE)
+                .addContainerGap(764, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(372, 372, 372))
         );
@@ -216,7 +521,7 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(events_panLayout.createSequentialGroup()
                 .addGap(136, 136, 136)
                 .addComponent(jLabel7)
-                .addContainerGap(342, Short.MAX_VALUE))
+                .addContainerGap(384, Short.MAX_VALUE))
         );
 
         base_pan.add(events_pan, "card7");
@@ -319,6 +624,54 @@ public class Main_JFrame extends javax.swing.JFrame {
         base_pan.revalidate();
     }//GEN-LAST:event_events_BActionPerformed
 
+    private void username_FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_FieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_username_FieldActionPerformed
+
+    private void password_FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_password_FieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_password_FieldActionPerformed
+
+    private void logintosystem_bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logintosystem_bActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_logintosystem_bActionPerformed
+
+    private void event_scroll_login_TextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_event_scroll_login_TextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_event_scroll_login_TextActionPerformed
+
+    private void callsecurity_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callsecurity_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_callsecurity_BActionPerformed
+
+    private void fliter3_map_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter3_map_CheckActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fliter3_map_CheckActionPerformed
+
+    private void map_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_map_BActionPerformed
+                //Deleting panels
+        base_pan.removeAll();
+        base_pan.revalidate();
+        
+        //Adding panels
+        base_pan.add(map_pan);
+        base_pan.revalidate();
+    }//GEN-LAST:event_map_BActionPerformed
+
+    private void info_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_info_BActionPerformed
+                //Deleting panels
+        base_pan.removeAll();
+        base_pan.revalidate();
+        
+        //Adding panels
+        base_pan.add(info_pan);
+        base_pan.revalidate();
+    }//GEN-LAST:event_info_BActionPerformed
+
+    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -358,34 +711,63 @@ public class Main_JFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel FLINDERSUNIVERSITY;
     private javax.swing.JLabel FLINSAFE;
     private javax.swing.JPanel base_pan;
     private javax.swing.JPanel base_pan1;
+    private javax.swing.JButton callsecurity_B;
+    private javax.swing.JButton emergen_B;
+    private javax.swing.JTextField event_scroll_login_Text;
+    private javax.swing.JScrollPane eventlist_security_JScrollPane;
+    private javax.swing.JLabel eventlist_security_Label;
+    private javax.swing.JList<String> eventlist_security_List;
     private javax.swing.JButton events_B;
     private javax.swing.JPanel events_pan;
+    private javax.swing.JCheckBox filter1_map_Check;
+    private javax.swing.JCheckBox fliter2_map_Check;
+    private javax.swing.JCheckBox fliter3_map_Check;
+    private javax.swing.JCheckBox fliter4_map_Check;
+    private javax.swing.JCheckBox fliter5_map_Check;
+    private javax.swing.JCheckBox fliter6_map_Check;
+    private javax.swing.JLabel fliters_map_Label;
+    private javax.swing.JLabel importantnews_login_Label;
     private javax.swing.JButton info_B;
+    private javax.swing.JScrollPane info_login_JScrollPane;
+    private javax.swing.JTextArea info_login_Text;
     private javax.swing.JPanel info_pan;
+    private javax.swing.JScrollPane info_security_JScrollPane;
+    private javax.swing.JTextArea info_security_Text;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JButton login_B;
     private javax.swing.JPanel login_pan;
+    private javax.swing.JButton logintosystem_b;
     private javax.swing.JButton map_B;
     private javax.swing.JPanel map_pan;
+    private javax.swing.JButton medicalass_B;
+    private javax.swing.JLabel password;
+    private javax.swing.JPasswordField password_Field;
     private javax.swing.JButton report_B;
     private javax.swing.JPanel report_pan;
     private javax.swing.JPanel report_pan1;
     private javax.swing.JPanel report_pan2;
     private javax.swing.JPanel report_pan3;
     private javax.swing.JPanel report_pan4;
+    private javax.swing.JPanel rightside_login_pan;
     private javax.swing.JButton security_B;
     private javax.swing.JPanel security_pan;
     private javax.swing.JPanel security_pan1;
     private javax.swing.JPanel security_pan2;
     private javax.swing.JPanel security_pan3;
     private javax.swing.JPanel security_pan7;
+    private javax.swing.JLabel username;
+    private javax.swing.JFormattedTextField username_Field;
     // End of variables declaration//GEN-END:variables
 }
