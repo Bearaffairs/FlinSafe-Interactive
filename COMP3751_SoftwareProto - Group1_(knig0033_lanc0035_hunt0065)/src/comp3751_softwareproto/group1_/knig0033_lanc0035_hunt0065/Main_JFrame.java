@@ -294,7 +294,9 @@ public class Main_JFrame extends javax.swing.JFrame {
         });
 
         logintosystem_b.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        logintosystem_b.setText("LOGIN");
+        logintosystem_b.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonImages/base_login.png"))); // NOI18N
+        logintosystem_b.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonImages/loginMO.png"))); // NOI18N
+        logintosystem_b.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonImages/login_bPressed.png"))); // NOI18N
         logintosystem_b.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -387,13 +389,12 @@ public class Main_JFrame extends javax.swing.JFrame {
             login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(login_panLayout.createSequentialGroup()
                 .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(login_panLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, login_panLayout.createSequentialGroup()
+                        .addGap(71, 83, Short.MAX_VALUE)
                         .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(password_Field, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(username_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(85, 85, 85))
+                        .addGap(173, 173, 173))
                     .addGroup(login_panLayout.createSequentialGroup()
                         .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(login_panLayout.createSequentialGroup()
@@ -401,7 +402,10 @@ public class Main_JFrame extends javax.swing.JFrame {
                                 .addComponent(password))
                             .addGroup(login_panLayout.createSequentialGroup()
                                 .addGap(160, 160, 160)
-                                .addComponent(username)))
+                                .addComponent(username))
+                            .addGroup(login_panLayout.createSequentialGroup()
+                                .addGap(113, 113, 113)
+                                .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(rightside_login_pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44))
@@ -421,7 +425,7 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(password_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(51, 51, 51))
         );
 
