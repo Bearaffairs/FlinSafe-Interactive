@@ -47,9 +47,19 @@ public class Main_JFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jProgressBar1 = new javax.swing.JProgressBar();
         report_pan = new javax.swing.JPanel();
+        details_report_jScrollPanel = new javax.swing.JScrollPane();
+        details_report_Text = new javax.swing.JTextArea();
+        jLabel5 = new javax.swing.JLabel();
+        report_cancel_B = new javax.swing.JButton();
+        report_submit_B = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jCheckBox1 = new javax.swing.JCheckBox();
         info_pan = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
         login_pan = new javax.swing.JPanel();
         password_Field = new javax.swing.JPasswordField();
         logintosystem_b = new javax.swing.JButton();
@@ -70,12 +80,22 @@ public class Main_JFrame extends javax.swing.JFrame {
         fliter5_map_Check = new javax.swing.JCheckBox();
         fliter6_map_Check = new javax.swing.JCheckBox();
         fliters_map_Label = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jButton1 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        search_map_Form = new javax.swing.JFormattedTextField();
+        search_map_B = new javax.swing.JButton();
+        map_map_pan = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         events_pan = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        filters_events_Label = new javax.swing.JLabel();
+        filter1_events_Check = new javax.swing.JCheckBox();
+        fliter2_events_Check = new javax.swing.JCheckBox();
+        fliter3_events_Check = new javax.swing.JCheckBox();
+        fliter4_events_Check = new javax.swing.JCheckBox();
+        fliter5_events_Check = new javax.swing.JCheckBox();
+        fliter6_events_Check = new javax.swing.JCheckBox();
+        search_events_Form = new javax.swing.JFormattedTextField();
+        search_evnets_B = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -134,6 +154,9 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         base_pan.setLayout(new java.awt.CardLayout());
 
+        security_pan.setMaximumSize(new java.awt.Dimension(1200, 562));
+        security_pan.setPreferredSize(new java.awt.Dimension(1200, 562));
+
         callsecurity_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         callsecurity_B.setText("Call Security");
         callsecurity_B.addActionListener(new java.awt.event.ActionListener() {
@@ -182,14 +205,12 @@ public class Main_JFrame extends javax.swing.JFrame {
                             .addComponent(medicalass_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(callsecurity_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(security_panLayout.createSequentialGroup()
-                                .addComponent(emergen_B, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(emergen_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(59, 59, 59))
                     .addGroup(security_panLayout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)))
                 .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(eventlist_security_JScrollPane)
                     .addComponent(eventlist_security_Label, javax.swing.GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
@@ -202,7 +223,7 @@ public class Main_JFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(security_panLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -223,47 +244,140 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         base_pan.add(security_pan, "card2");
 
-        jLabel2.setText("Report memes");
+        report_pan.setMaximumSize(new java.awt.Dimension(1200, 562));
+        report_pan.setPreferredSize(new java.awt.Dimension(1200, 562));
+
+        details_report_Text.setColumns(20);
+        details_report_Text.setRows(5);
+        details_report_Text.setText("Hey there, things happened here\n");
+        details_report_jScrollPanel.setViewportView(details_report_Text);
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel5.setText("Please enter the details of the incident");
+
+        report_cancel_B.setText("can");
+
+        report_submit_B.setText("sub");
+
+        jTextField1.setText("jTextField1");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setText("Type of incident");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel6.setText("Location");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel8.setText("Time of day");
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox1.setText("jCheckBox1");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout report_panLayout = new javax.swing.GroupLayout(report_pan);
         report_pan.setLayout(report_panLayout);
         report_panLayout.setHorizontalGroup(
             report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(report_panLayout.createSequentialGroup()
-                .addGap(420, 420, 420)
-                .addComponent(jLabel2)
-                .addContainerGap(711, Short.MAX_VALUE))
+                .addGroup(report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(report_panLayout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(report_submit_B, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43)
+                        .addComponent(report_cancel_B, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(report_panLayout.createSequentialGroup()
+                        .addGap(105, 105, 105)
+                        .addGroup(report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(report_panLayout.createSequentialGroup()
+                                .addGap(124, 124, 124)
+                                .addComponent(jLabel2))
+                            .addComponent(jTextField1)
+                            .addComponent(jComboBox2, 0, 370, Short.MAX_VALUE)
+                            .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(report_panLayout.createSequentialGroup()
+                        .addGap(247, 247, 247)
+                        .addComponent(jLabel6))
+                    .addGroup(report_panLayout.createSequentialGroup()
+                        .addGap(233, 233, 233)
+                        .addComponent(jLabel8)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addComponent(details_report_jScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, report_panLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addGap(116, 116, 116))
         );
         report_panLayout.setVerticalGroup(
             report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(report_panLayout.createSequentialGroup()
-                .addGap(208, 208, 208)
-                .addComponent(jLabel2)
-                .addContainerGap(312, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, report_panLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(report_panLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69)
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jCheckBox1)
+                        .addGap(46, 46, 46)
+                        .addGroup(report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(report_cancel_B, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(report_submit_B, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(43, 43, 43))
+                    .addGroup(report_panLayout.createSequentialGroup()
+                        .addComponent(details_report_jScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         base_pan.add(report_pan, "card3");
 
-        jLabel4.setText("Infomemes");
+        info_pan.setMaximumSize(new java.awt.Dimension(1200, 562));
+        info_pan.setPreferredSize(new java.awt.Dimension(1200, 562));
+        info_pan.setRequestFocusEnabled(false);
 
         javax.swing.GroupLayout info_panLayout = new javax.swing.GroupLayout(info_pan);
         info_pan.setLayout(info_panLayout);
         info_panLayout.setHorizontalGroup(
             info_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(info_panLayout.createSequentialGroup()
-                .addGap(473, 473, 473)
-                .addComponent(jLabel4)
-                .addContainerGap(674, Short.MAX_VALUE))
+            .addGap(0, 1200, Short.MAX_VALUE)
         );
         info_panLayout.setVerticalGroup(
             info_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(info_panLayout.createSequentialGroup()
-                .addGap(192, 192, 192)
-                .addComponent(jLabel4)
-                .addContainerGap(328, Short.MAX_VALUE))
+            .addGap(0, 569, Short.MAX_VALUE)
         );
 
         base_pan.add(info_pan, "card4");
+
+        login_pan.setMaximumSize(new java.awt.Dimension(1200, 562));
+        login_pan.setPreferredSize(new java.awt.Dimension(1200, 562));
 
         password_Field.setText("jPasswordField1");
         password_Field.setMargin(new java.awt.Insets(2, 10, 2, 2));
@@ -347,7 +461,7 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rightside_login_panLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(FLINDERSUNIVERSITY)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                 .addComponent(info_login_JScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(importantnews_login_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -402,6 +516,9 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         base_pan.add(login_pan, "card5");
 
+        map_pan.setMaximumSize(new java.awt.Dimension(1200, 562));
+        map_pan.setPreferredSize(new java.awt.Dimension(1200, 562));
+
         filter1_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         filter1_map_Check.setText("Fliter6");
 
@@ -428,29 +545,29 @@ public class Main_JFrame extends javax.swing.JFrame {
         fliters_map_Label.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         fliters_map_Label.setText("Filters");
 
-        jFormattedTextField1.setText("Hope and dreams");
-        jFormattedTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
+        search_map_Form.setText("Hope and dreams");
+        search_map_Form.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        search_map_Form.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField1ActionPerformed(evt);
+                search_map_FormActionPerformed(evt);
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setText("Search");
+        search_map_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        search_map_B.setText("Search");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/comp3751_softwareproto/group1_/knig0033_lanc0035_hunt0065/chrome_2018-05-14_16-34-48.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout map_map_panLayout = new javax.swing.GroupLayout(map_map_pan);
+        map_map_pan.setLayout(map_map_panLayout);
+        map_map_panLayout.setHorizontalGroup(
+            map_map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(map_map_panLayout.createSequentialGroup()
                 .addComponent(jLabel3)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        map_map_panLayout.setVerticalGroup(
+            map_map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel3)
         );
 
@@ -461,7 +578,7 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(map_panLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(map_map_pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(map_panLayout.createSequentialGroup()
                         .addComponent(fliters_map_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -477,51 +594,142 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(filter1_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(search_map_B, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(search_map_Form, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         map_panLayout.setVerticalGroup(
             map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(map_panLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(filter1_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(fliter3_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                    .addComponent(fliter2_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                    .addComponent(fliter4_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                    .addComponent(fliter5_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                    .addComponent(fliter6_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                    .addComponent(fliters_map_Label)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(map_panLayout.createSequentialGroup()
-                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)))
+                .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, map_panLayout.createSequentialGroup()
+                        .addComponent(search_map_Form, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(2, 2, 2))
+                    .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(filter1_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(fliter3_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                        .addComponent(fliter2_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                        .addComponent(fliter4_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                        .addComponent(fliter5_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                        .addComponent(fliter6_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                        .addComponent(fliters_map_Label)
+                        .addComponent(search_map_B, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(map_map_pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         base_pan.add(map_pan, "card6");
 
-        jLabel7.setText("event memes");
+        events_pan.setMaximumSize(new java.awt.Dimension(1200, 562));
+        events_pan.setPreferredSize(new java.awt.Dimension(1200, 562));
+
+        filters_events_Label.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        filters_events_Label.setText("Filters");
+
+        filter1_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        filter1_events_Check.setText("Fliter6");
+
+        fliter2_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter2_events_Check.setText("Fliter4");
+
+        fliter3_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter3_events_Check.setText("Fliter3");
+        fliter3_events_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fliter3_events_CheckActionPerformed(evt);
+            }
+        });
+
+        fliter4_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter4_events_Check.setText("Fliter5");
+        fliter4_events_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fliter4_events_CheckActionPerformed(evt);
+            }
+        });
+
+        fliter5_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter5_events_Check.setText("Fliter1");
+        fliter5_events_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fliter5_events_CheckActionPerformed(evt);
+            }
+        });
+
+        fliter6_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fliter6_events_Check.setText("Fliter2");
+
+        search_events_Form.setText("Hope and dreams");
+        search_events_Form.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        search_events_Form.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                search_events_FormActionPerformed(evt);
+            }
+        });
+
+        search_evnets_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        search_evnets_B.setText("Search");
+
+        jList1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "INCIDENT | STOLEN ITEM | BAG | CAFE | 12:00PM | SUCESSFULLY FOUND | AS1924", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
 
         javax.swing.GroupLayout events_panLayout = new javax.swing.GroupLayout(events_pan);
         events_pan.setLayout(events_panLayout);
         events_panLayout.setHorizontalGroup(
             events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, events_panLayout.createSequentialGroup()
-                .addContainerGap(764, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addGap(372, 372, 372))
+            .addGroup(events_panLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addGroup(events_panLayout.createSequentialGroup()
+                        .addComponent(filters_events_Label)
+                        .addGap(37, 37, 37)
+                        .addComponent(fliter5_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fliter6_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fliter3_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fliter2_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(fliter4_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(filter1_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(search_evnets_B, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(search_events_Form, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         events_panLayout.setVerticalGroup(
             events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(events_panLayout.createSequentialGroup()
-                .addGap(136, 136, 136)
-                .addComponent(jLabel7)
-                .addContainerGap(384, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(search_events_Form, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(search_evnets_B, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fliter2_events_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fliter3_events_Check, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fliter6_events_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(fliter4_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(filter1_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(fliter5_events_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(filters_events_Label)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 495, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         base_pan.add(events_pan, "card7");
@@ -591,6 +799,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         //Adding panels
         base_pan.add(security_pan);
         base_pan.revalidate();
+        base_pan.repaint();
         
     }//GEN-LAST:event_security_BActionPerformed
 
@@ -602,6 +811,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         //Adding panels
         base_pan.add(report_pan);
         base_pan.revalidate();
+        base_pan.repaint();
     }//GEN-LAST:event_report_BActionPerformed
 
     private void login_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_BActionPerformed
@@ -612,6 +822,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         //Adding panels
         base_pan.add(login_pan);
         base_pan.revalidate();
+        base_pan.repaint();
     }//GEN-LAST:event_login_BActionPerformed
 
     private void events_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_events_BActionPerformed
@@ -622,6 +833,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         //Adding panels
         base_pan.add(events_pan);
         base_pan.revalidate();
+        base_pan.repaint();
     }//GEN-LAST:event_events_BActionPerformed
 
     private void username_FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_FieldActionPerformed
@@ -656,6 +868,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         //Adding panels
         base_pan.add(map_pan);
         base_pan.revalidate();
+        base_pan.repaint();
     }//GEN-LAST:event_map_BActionPerformed
 
     private void info_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_info_BActionPerformed
@@ -666,11 +879,40 @@ public class Main_JFrame extends javax.swing.JFrame {
         //Adding panels
         base_pan.add(info_pan);
         base_pan.revalidate();
+        base_pan.repaint();
     }//GEN-LAST:event_info_BActionPerformed
 
-    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+    private void search_map_FormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search_map_FormActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+    }//GEN-LAST:event_search_map_FormActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void fliter3_events_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter3_events_CheckActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fliter3_events_CheckActionPerformed
+
+    private void search_events_FormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search_events_FormActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_search_events_FormActionPerformed
+
+    private void fliter4_events_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter4_events_CheckActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fliter4_events_CheckActionPerformed
+
+    private void fliter5_events_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter5_events_CheckActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fliter5_events_CheckActionPerformed
 
     /**
      * @param args the command line arguments
@@ -714,8 +956,9 @@ public class Main_JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel FLINDERSUNIVERSITY;
     private javax.swing.JLabel FLINSAFE;
     private javax.swing.JPanel base_pan;
-    private javax.swing.JPanel base_pan1;
     private javax.swing.JButton callsecurity_B;
+    private javax.swing.JTextArea details_report_Text;
+    private javax.swing.JScrollPane details_report_jScrollPanel;
     private javax.swing.JButton emergen_B;
     private javax.swing.JTextField event_scroll_login_Text;
     private javax.swing.JScrollPane eventlist_security_JScrollPane;
@@ -723,11 +966,18 @@ public class Main_JFrame extends javax.swing.JFrame {
     private javax.swing.JList<String> eventlist_security_List;
     private javax.swing.JButton events_B;
     private javax.swing.JPanel events_pan;
+    private javax.swing.JCheckBox filter1_events_Check;
     private javax.swing.JCheckBox filter1_map_Check;
+    private javax.swing.JLabel filters_events_Label;
+    private javax.swing.JCheckBox fliter2_events_Check;
     private javax.swing.JCheckBox fliter2_map_Check;
+    private javax.swing.JCheckBox fliter3_events_Check;
     private javax.swing.JCheckBox fliter3_map_Check;
+    private javax.swing.JCheckBox fliter4_events_Check;
     private javax.swing.JCheckBox fliter4_map_Check;
+    private javax.swing.JCheckBox fliter5_events_Check;
     private javax.swing.JCheckBox fliter5_map_Check;
+    private javax.swing.JCheckBox fliter6_events_Check;
     private javax.swing.JCheckBox fliter6_map_Check;
     private javax.swing.JLabel fliters_map_Label;
     private javax.swing.JLabel importantnews_login_Label;
@@ -737,36 +987,39 @@ public class Main_JFrame extends javax.swing.JFrame {
     private javax.swing.JPanel info_pan;
     private javax.swing.JScrollPane info_security_JScrollPane;
     private javax.swing.JTextArea info_security_Text;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JList<String> jList1;
     private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton login_B;
     private javax.swing.JPanel login_pan;
     private javax.swing.JButton logintosystem_b;
     private javax.swing.JButton map_B;
+    private javax.swing.JPanel map_map_pan;
     private javax.swing.JPanel map_pan;
     private javax.swing.JButton medicalass_B;
     private javax.swing.JLabel password;
     private javax.swing.JPasswordField password_Field;
     private javax.swing.JButton report_B;
+    private javax.swing.JButton report_cancel_B;
     private javax.swing.JPanel report_pan;
-    private javax.swing.JPanel report_pan1;
-    private javax.swing.JPanel report_pan2;
-    private javax.swing.JPanel report_pan3;
-    private javax.swing.JPanel report_pan4;
+    private javax.swing.JButton report_submit_B;
     private javax.swing.JPanel rightside_login_pan;
+    private javax.swing.JFormattedTextField search_events_Form;
+    private javax.swing.JButton search_evnets_B;
+    private javax.swing.JButton search_map_B;
+    private javax.swing.JFormattedTextField search_map_Form;
     private javax.swing.JButton security_B;
     private javax.swing.JPanel security_pan;
-    private javax.swing.JPanel security_pan1;
-    private javax.swing.JPanel security_pan2;
-    private javax.swing.JPanel security_pan3;
-    private javax.swing.JPanel security_pan7;
     private javax.swing.JLabel username;
     private javax.swing.JFormattedTextField username_Field;
     // End of variables declaration//GEN-END:variables
