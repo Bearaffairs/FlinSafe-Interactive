@@ -25,8 +25,7 @@ public class Main_JFrame extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         security_B = new javax.swing.JButton();
         report_B = new javax.swing.JButton();
@@ -83,20 +82,16 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         security_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         security_B.setText("Security");
-        security_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        security_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 security_BActionPerformed(evt);
             }
         });
 
         report_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         report_B.setText("Report");
-        report_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        report_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 report_BActionPerformed(evt);
             }
         });
@@ -104,40 +99,32 @@ public class Main_JFrame extends javax.swing.JFrame {
         info_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         info_B.setText("Information");
         info_B.setToolTipText("");
-        info_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        info_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 info_BActionPerformed(evt);
             }
         });
 
         events_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         events_B.setText("Events");
-        events_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        events_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 events_BActionPerformed(evt);
             }
         });
 
         map_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         map_B.setText("Map");
-        map_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        map_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 map_BActionPerformed(evt);
             }
         });
 
         login_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         login_B.setText("Login");
-        login_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        login_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 login_BActionPerformed(evt);
             }
         });
@@ -145,16 +132,12 @@ public class Main_JFrame extends javax.swing.JFrame {
         FLINSAFE.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         FLINSAFE.setText("FLINSAFE");
 
-        base_pan.setMaximumSize(new java.awt.Dimension(1280, 720));
-        base_pan.setMinimumSize(new java.awt.Dimension(1280, 720));
         base_pan.setLayout(new java.awt.CardLayout());
 
         callsecurity_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         callsecurity_B.setText("Call Security");
-        callsecurity_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        callsecurity_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 callsecurity_BActionPerformed(evt);
             }
         });
@@ -165,8 +148,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         emergen_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         emergen_B.setText("Emergency Services");
 
-        eventlist_security_List.setModel(new javax.swing.AbstractListModel<String>()
-        {
+        eventlist_security_List.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
@@ -220,7 +202,7 @@ public class Main_JFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(security_panLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 209, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -250,14 +232,14 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(report_panLayout.createSequentialGroup()
                 .addGap(420, 420, 420)
                 .addComponent(jLabel2)
-                .addContainerGap(791, Short.MAX_VALUE))
+                .addContainerGap(711, Short.MAX_VALUE))
         );
         report_panLayout.setVerticalGroup(
             report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(report_panLayout.createSequentialGroup()
                 .addGap(208, 208, 208)
                 .addComponent(jLabel2)
-                .addContainerGap(499, Short.MAX_VALUE))
+                .addContainerGap(312, Short.MAX_VALUE))
         );
 
         base_pan.add(report_pan, "card3");
@@ -271,36 +253,30 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(info_panLayout.createSequentialGroup()
                 .addGap(473, 473, 473)
                 .addComponent(jLabel4)
-                .addContainerGap(754, Short.MAX_VALUE))
+                .addContainerGap(674, Short.MAX_VALUE))
         );
         info_panLayout.setVerticalGroup(
             info_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(info_panLayout.createSequentialGroup()
                 .addGap(192, 192, 192)
                 .addComponent(jLabel4)
-                .addContainerGap(515, Short.MAX_VALUE))
+                .addContainerGap(328, Short.MAX_VALUE))
         );
 
         base_pan.add(info_pan, "card4");
 
         password_Field.setText("jPasswordField1");
         password_Field.setMargin(new java.awt.Insets(2, 10, 2, 2));
-        password_Field.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        password_Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 password_FieldActionPerformed(evt);
             }
         });
 
         logintosystem_b.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        logintosystem_b.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonImages/base_login.png"))); // NOI18N
-        logintosystem_b.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonImages/loginMO.png"))); // NOI18N
-        logintosystem_b.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonImages/login_bPressed.png"))); // NOI18N
-        logintosystem_b.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        logintosystem_b.setText("LOGIN");
+        logintosystem_b.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logintosystem_bActionPerformed(evt);
             }
         });
@@ -309,10 +285,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         username_Field.setFocusable(false);
         username_Field.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         username_Field.setMargin(new java.awt.Insets(2, 10, 2, 2));
-        username_Field.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        username_Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 username_FieldActionPerformed(evt);
             }
         });
@@ -326,10 +300,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         event_scroll_login_Text.setEditable(false);
         event_scroll_login_Text.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         event_scroll_login_Text.setText("THINGS SCROLL HERE");
-        event_scroll_login_Text.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        event_scroll_login_Text.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 event_scroll_login_TextActionPerformed(evt);
             }
         });
@@ -345,6 +317,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         info_login_Text.setColumns(20);
         info_login_Text.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         info_login_Text.setRows(2);
+        info_login_Text.setText("I'VE COME OUT OF THE COMPUTER TO TELL YOU TO STOP\n");
         info_login_Text.setBorder(null);
         info_login_Text.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         info_login_Text.setFocusable(false);
@@ -374,7 +347,7 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rightside_login_panLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(FLINDERSUNIVERSITY)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 214, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(info_login_JScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(importantnews_login_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -389,12 +362,13 @@ public class Main_JFrame extends javax.swing.JFrame {
             login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(login_panLayout.createSequentialGroup()
                 .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, login_panLayout.createSequentialGroup()
-                        .addGap(71, 83, Short.MAX_VALUE)
+                    .addGroup(login_panLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(password_Field, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(username_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(173, 173, 173))
+                        .addGap(85, 85, 85))
                     .addGroup(login_panLayout.createSequentialGroup()
                         .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(login_panLayout.createSequentialGroup()
@@ -402,10 +376,7 @@ public class Main_JFrame extends javax.swing.JFrame {
                                 .addComponent(password))
                             .addGroup(login_panLayout.createSequentialGroup()
                                 .addGap(160, 160, 160)
-                                .addComponent(username))
-                            .addGroup(login_panLayout.createSequentialGroup()
-                                .addGap(113, 113, 113)
-                                .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(username)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(rightside_login_pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44))
@@ -425,13 +396,11 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(password_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(51, 51, 51))
         );
 
         base_pan.add(login_pan, "card5");
-
-        map_pan.setMaximumSize(new java.awt.Dimension(1280, 720));
 
         filter1_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         filter1_map_Check.setText("Fliter6");
@@ -441,10 +410,8 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         fliter3_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter3_map_Check.setText("Fliter3");
-        fliter3_map_Check.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        fliter3_map_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fliter3_map_CheckActionPerformed(evt);
             }
         });
@@ -461,11 +428,10 @@ public class Main_JFrame extends javax.swing.JFrame {
         fliters_map_Label.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         fliters_map_Label.setText("Filters");
 
+        jFormattedTextField1.setText("Hope and dreams");
         jFormattedTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jFormattedTextField1ActionPerformed(evt);
             }
         });
@@ -473,26 +439,19 @@ public class Main_JFrame extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton1.setText("Search");
 
-        jPanel1.setMaximumSize(new java.awt.Dimension(1280, 720));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Flinders uni Map.PNG"))); // NOI18N
-        jLabel3.setText("jLabel3");
-        jLabel3.setToolTipText("");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/comp3751_softwareproto/group1_/knig0033_lanc0035_hunt0065/chrome_2018-05-14_16-34-48.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(648, 648, 648))
+                .addComponent(jLabel3)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 607, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 11, Short.MAX_VALUE))
+            .addComponent(jLabel3)
         );
 
         javax.swing.GroupLayout map_panLayout = new javax.swing.GroupLayout(map_pan);
@@ -501,11 +460,11 @@ public class Main_JFrame extends javax.swing.JFrame {
             map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(map_panLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(map_panLayout.createSequentialGroup()
                         .addComponent(fliters_map_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
+                        .addGap(18, 18, 18)
                         .addComponent(fliter5_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(fliter6_map_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -520,28 +479,26 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         map_panLayout.setVerticalGroup(
             map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(map_panLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, map_panLayout.createSequentialGroup()
+                .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(filter1_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fliter3_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliter2_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliter4_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliter5_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliter6_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(fliters_map_Label)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(map_panLayout.createSequentialGroup()
                         .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2))
-                    .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(filter1_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fliter3_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fliter2_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fliter4_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fliter5_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fliter6_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fliters_map_Label)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(55, 55, 55)
+                        .addGap(2, 2, 2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -555,7 +512,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         events_panLayout.setHorizontalGroup(
             events_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, events_panLayout.createSequentialGroup()
-                .addContainerGap(844, Short.MAX_VALUE)
+                .addContainerGap(764, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(372, 372, 372))
         );
@@ -564,7 +521,7 @@ public class Main_JFrame extends javax.swing.JFrame {
             .addGroup(events_panLayout.createSequentialGroup()
                 .addGap(136, 136, 136)
                 .addComponent(jLabel7)
-                .addContainerGap(571, Short.MAX_VALUE))
+                .addContainerGap(384, Short.MAX_VALUE))
         );
 
         base_pan.add(events_pan, "card7");
@@ -574,51 +531,52 @@ public class Main_JFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(base_pan, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(security_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(report_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(info_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(events_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(map_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(login_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(118, 118, 118))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(FLINSAFE)
-                                .addGap(568, 568, 568))))))
+                        .addContainerGap()
+                        .addComponent(base_pan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(517, 517, 517)
+                        .addComponent(FLINSAFE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(security_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(report_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(info_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(events_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(map_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(login_B, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(68, 68, 68)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(21, 21, 21)
                         .addComponent(FLINSAFE, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(99, 99, 99)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(login_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(map_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(login_B, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                            .addComponent(map_B, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                             .addComponent(events_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(info_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(security_B, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(report_B, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(28, 28, 28)
-                .addComponent(base_pan, javax.swing.GroupLayout.DEFAULT_SIZE, 721, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(base_pan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18))
         );
 
@@ -666,6 +624,22 @@ public class Main_JFrame extends javax.swing.JFrame {
         base_pan.revalidate();
     }//GEN-LAST:event_events_BActionPerformed
 
+    private void username_FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_FieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_username_FieldActionPerformed
+
+    private void password_FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_password_FieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_password_FieldActionPerformed
+
+    private void logintosystem_bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logintosystem_bActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_logintosystem_bActionPerformed
+
+    private void event_scroll_login_TextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_event_scroll_login_TextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_event_scroll_login_TextActionPerformed
+
     private void callsecurity_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callsecurity_BActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_callsecurity_BActionPerformed
@@ -697,26 +671,6 @@ public class Main_JFrame extends javax.swing.JFrame {
     private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jFormattedTextField1ActionPerformed
-
-    private void event_scroll_login_TextActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_event_scroll_login_TextActionPerformed
-    {//GEN-HEADEREND:event_event_scroll_login_TextActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_event_scroll_login_TextActionPerformed
-
-    private void username_FieldActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_username_FieldActionPerformed
-    {//GEN-HEADEREND:event_username_FieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_username_FieldActionPerformed
-
-    private void logintosystem_bActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_logintosystem_bActionPerformed
-    {//GEN-HEADEREND:event_logintosystem_bActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_logintosystem_bActionPerformed
-
-    private void password_FieldActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_password_FieldActionPerformed
-    {//GEN-HEADEREND:event_password_FieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_password_FieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -753,10 +707,6 @@ public class Main_JFrame extends javax.swing.JFrame {
             public void run() {
                 new Main_JFrame().setVisible(true);
             }
-            
-            
-            
-            
         });
     }
 
@@ -764,6 +714,7 @@ public class Main_JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel FLINDERSUNIVERSITY;
     private javax.swing.JLabel FLINSAFE;
     private javax.swing.JPanel base_pan;
+    private javax.swing.JPanel base_pan1;
     private javax.swing.JButton callsecurity_B;
     private javax.swing.JButton emergen_B;
     private javax.swing.JTextField event_scroll_login_Text;
@@ -805,9 +756,17 @@ public class Main_JFrame extends javax.swing.JFrame {
     private javax.swing.JPasswordField password_Field;
     private javax.swing.JButton report_B;
     private javax.swing.JPanel report_pan;
+    private javax.swing.JPanel report_pan1;
+    private javax.swing.JPanel report_pan2;
+    private javax.swing.JPanel report_pan3;
+    private javax.swing.JPanel report_pan4;
     private javax.swing.JPanel rightside_login_pan;
     private javax.swing.JButton security_B;
     private javax.swing.JPanel security_pan;
+    private javax.swing.JPanel security_pan1;
+    private javax.swing.JPanel security_pan2;
+    private javax.swing.JPanel security_pan3;
+    private javax.swing.JPanel security_pan7;
     private javax.swing.JLabel username;
     private javax.swing.JFormattedTextField username_Field;
     // End of variables declaration//GEN-END:variables
