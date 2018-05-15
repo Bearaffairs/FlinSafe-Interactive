@@ -25,8 +25,7 @@ public class Main_JFrame extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         security_B = new javax.swing.JButton();
         report_B = new javax.swing.JButton();
@@ -130,10 +129,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         security_B.setOpaque(false);
         security_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/securityButtonTop/security_bMouseOver.png"))); // NOI18N
         security_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/securityButtonTop/security_bPressed.png"))); // NOI18N
-        security_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        security_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 security_BActionPerformed(evt);
             }
         });
@@ -144,10 +141,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         report_B.setOpaque(false);
         report_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reportButtonTop/report_bMouseOver.png"))); // NOI18N
         report_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reportButtonTop/report_bPressed.png"))); // NOI18N
-        report_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        report_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 report_BActionPerformed(evt);
             }
         });
@@ -160,10 +155,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         info_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/informationButtonTop/info_bMouseOver.png"))); // NOI18N
         info_B.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/informationButtonTop/info_bPressed.png"))); // NOI18N
         info_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/informationButtonTop/info_bPressed.png"))); // NOI18N
-        info_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        info_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 info_BActionPerformed(evt);
             }
         });
@@ -174,10 +167,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         events_B.setOpaque(false);
         events_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/eventsButtonTop/events_bMouseOver.png"))); // NOI18N
         events_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/eventsButtonTop/events_bPressed.png"))); // NOI18N
-        events_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        events_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 events_BActionPerformed(evt);
             }
         });
@@ -188,10 +179,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         map_B.setOpaque(false);
         map_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mapButtonTop/map_bMouseOver.png"))); // NOI18N
         map_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mapButtonTop/map_bPressed.png"))); // NOI18N
-        map_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        map_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 map_BActionPerformed(evt);
             }
         });
@@ -204,10 +193,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         login_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbuttonTop/login_bPressed.png"))); // NOI18N
         login_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbuttonTop/login_bMouseOver.png"))); // NOI18N
         login_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbuttonTop/login_bPressed.png"))); // NOI18N
-        login_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        login_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 login_BActionPerformed(evt);
             }
         });
@@ -220,23 +207,30 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         callsecurity_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         callsecurity_B.setText("Call Security");
-        callsecurity_B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        callsecurity_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 callsecurity_BActionPerformed(evt);
             }
         });
 
         medicalass_B.setFont(new java.awt.Font("Tahoma", 0, 34)); // NOI18N
         medicalass_B.setText("Medical Assistance");
+        medicalass_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                medicalass_BActionPerformed(evt);
+            }
+        });
 
         emergen_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         emergen_B.setText("Emergency Services");
+        emergen_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emergen_BActionPerformed(evt);
+            }
+        });
 
         eventlist_security_List.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        eventlist_security_List.setModel(new javax.swing.AbstractListModel<String>()
-        {
+        eventlist_security_List.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
@@ -331,10 +325,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         jTextField1.setText("jTextField1");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
@@ -349,19 +341,15 @@ public class Main_JFrame extends javax.swing.JFrame {
         jLabel8.setText("Time of day");
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
             }
         });
 
         jCheckBox1.setText("jCheckBox1");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
             }
         });
@@ -428,8 +416,8 @@ public class Main_JFrame extends javax.swing.JFrame {
                     .addGroup(report_panLayout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(details_report_jScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addComponent(details_report_jScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(43, 43, 43))
         );
 
         base_pan.add(report_pan, "card3");
@@ -610,20 +598,16 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         password_Field.setText("jPasswordField1");
         password_Field.setMargin(new java.awt.Insets(2, 10, 2, 2));
-        password_Field.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        password_Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 password_FieldActionPerformed(evt);
             }
         });
 
         logintosystem_b.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         logintosystem_b.setText("LOGIN");
-        logintosystem_b.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        logintosystem_b.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logintosystem_bActionPerformed(evt);
             }
         });
@@ -632,10 +616,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         username_Field.setFocusable(false);
         username_Field.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         username_Field.setMargin(new java.awt.Insets(2, 10, 2, 2));
-        username_Field.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        username_Field.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 username_FieldActionPerformed(evt);
             }
         });
@@ -649,10 +631,8 @@ public class Main_JFrame extends javax.swing.JFrame {
         event_scroll_login_Text.setEditable(false);
         event_scroll_login_Text.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         event_scroll_login_Text.setText("THINGS SCROLL HERE");
-        event_scroll_login_Text.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        event_scroll_login_Text.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 event_scroll_login_TextActionPerformed(evt);
             }
         });
@@ -764,10 +744,8 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         fliter3_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter3_map_Check.setText("Fliter3");
-        fliter3_map_Check.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        fliter3_map_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fliter3_map_CheckActionPerformed(evt);
             }
         });
@@ -786,10 +764,8 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         search_map_Form.setText("Hope and dreams");
         search_map_Form.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        search_map_Form.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        search_map_Form.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 search_map_FormActionPerformed(evt);
             }
         });
@@ -879,30 +855,24 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         fliter3_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter3_events_Check.setText("Fliter3");
-        fliter3_events_Check.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        fliter3_events_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fliter3_events_CheckActionPerformed(evt);
             }
         });
 
         fliter4_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter4_events_Check.setText("Fliter5");
-        fliter4_events_Check.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        fliter4_events_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fliter4_events_CheckActionPerformed(evt);
             }
         });
 
         fliter5_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter5_events_Check.setText("Fliter1");
-        fliter5_events_Check.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        fliter5_events_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fliter5_events_CheckActionPerformed(evt);
             }
         });
@@ -912,10 +882,8 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         search_events_Form.setText("Hope and dreams");
         search_events_Form.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        search_events_Form.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        search_events_Form.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 search_events_FormActionPerformed(evt);
             }
         });
@@ -924,8 +892,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         search_evnets_B.setText("Search");
 
         jList1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jList1.setModel(new javax.swing.AbstractListModel<String>()
-        {
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "INCIDENT | STOLEN ITEM | BAG | CAFE | 12:00PM | SUCESSFULLY FOUND | AS1924", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
@@ -1063,6 +1030,10 @@ public class Main_JFrame extends javax.swing.JFrame {
 
     private void callsecurity_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callsecurity_BActionPerformed
         // TODO add your handling code here:
+        
+        confPop confPop = new confPop();
+        confPop.newScreen();
+        
     }//GEN-LAST:event_callsecurity_BActionPerformed
 
     private void fliter3_map_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter3_map_CheckActionPerformed
@@ -1122,6 +1093,20 @@ public class Main_JFrame extends javax.swing.JFrame {
     private void fliter5_events_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter5_events_CheckActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_fliter5_events_CheckActionPerformed
+
+    private void medicalass_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_medicalass_BActionPerformed
+        // TODO add your handling code here:
+        
+        confPop confPop = new confPop();
+        confPop.newScreen();
+    }//GEN-LAST:event_medicalass_BActionPerformed
+
+    private void emergen_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emergen_BActionPerformed
+        // TODO add your handling code here:
+        
+        confPop confPop = new confPop();
+        confPop.newScreen();
+    }//GEN-LAST:event_emergen_BActionPerformed
 
     /**
      * @param args the command line arguments
