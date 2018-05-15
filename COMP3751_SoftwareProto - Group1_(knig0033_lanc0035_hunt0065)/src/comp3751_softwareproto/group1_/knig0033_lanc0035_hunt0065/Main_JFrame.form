@@ -262,6 +262,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Medical Assistance"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="medicalass_BActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="emergen_B">
               <Properties>
@@ -270,6 +273,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Emergency Services"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emergen_BActionPerformed"/>
+              </Events>
             </Component>
             <Container class="javax.swing.JScrollPane" name="eventlist_security_JScrollPane">
               <AuxValues>
@@ -428,13 +434,10 @@
                                   <Component id="report_cancel_B" alignment="3" min="-2" pref="90" max="-2" attributes="0"/>
                                   <Component id="report_submit_B" alignment="3" min="-2" pref="90" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="details_report_jScrollPanel" min="-2" pref="480" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="details_report_jScrollPanel" min="-2" pref="480" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

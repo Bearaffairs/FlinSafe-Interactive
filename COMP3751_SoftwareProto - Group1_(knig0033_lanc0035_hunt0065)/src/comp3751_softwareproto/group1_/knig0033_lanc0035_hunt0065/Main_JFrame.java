@@ -167,9 +167,19 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         medicalass_B.setFont(new java.awt.Font("Tahoma", 0, 34)); // NOI18N
         medicalass_B.setText("Medical Assistance");
+        medicalass_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                medicalass_BActionPerformed(evt);
+            }
+        });
 
         emergen_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         emergen_B.setText("Emergency Services");
+        emergen_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emergen_BActionPerformed(evt);
+            }
+        });
 
         eventlist_security_List.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -350,11 +360,9 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addGap(46, 46, 46)
                         .addGroup(report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(report_cancel_B, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(report_submit_B, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(43, 43, 43))
-                    .addGroup(report_panLayout.createSequentialGroup()
-                        .addComponent(details_report_jScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                            .addComponent(report_submit_B, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(details_report_jScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43))
         );
 
         base_pan.add(report_pan, "card3");
@@ -854,6 +862,10 @@ public class Main_JFrame extends javax.swing.JFrame {
 
     private void callsecurity_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callsecurity_BActionPerformed
         // TODO add your handling code here:
+        
+        confPop confPop = new confPop();
+        confPop.newScreen();
+        
     }//GEN-LAST:event_callsecurity_BActionPerformed
 
     private void fliter3_map_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter3_map_CheckActionPerformed
@@ -913,6 +925,20 @@ public class Main_JFrame extends javax.swing.JFrame {
     private void fliter5_events_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter5_events_CheckActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_fliter5_events_CheckActionPerformed
+
+    private void medicalass_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_medicalass_BActionPerformed
+        // TODO add your handling code here:
+        
+        confPop confPop = new confPop();
+        confPop.newScreen();
+    }//GEN-LAST:event_medicalass_BActionPerformed
+
+    private void emergen_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emergen_BActionPerformed
+        // TODO add your handling code here:
+        
+        confPop confPop = new confPop();
+        confPop.newScreen();
+    }//GEN-LAST:event_emergen_BActionPerformed
 
     /**
      * @param args the command line arguments
