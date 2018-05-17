@@ -319,6 +319,11 @@ public class Main_JFrame extends javax.swing.JFrame {
         jLabel5.setText("Please enter the details of the incident");
 
         report_cancel_B.setText("cancel");
+        report_cancel_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                report_cancel_BActionPerformed(evt);
+            }
+        });
 
         report_submit_B.setText("submit");
 
@@ -1097,16 +1102,21 @@ public class Main_JFrame extends javax.swing.JFrame {
     private void medicalass_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_medicalass_BActionPerformed
         // TODO add your handling code here:
         
-        confPop confPop = new confPop();
+       confPop confPop = new confPop();
         confPop.newScreen();
     }//GEN-LAST:event_medicalass_BActionPerformed
 
     private void emergen_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emergen_BActionPerformed
         // TODO add your handling code here:
+            
+        emergencyType emerg = new emergencyType();
+        emerg.emergencyPop();
         
-        confPop confPop = new confPop();
-        confPop.newScreen();
     }//GEN-LAST:event_emergen_BActionPerformed
+
+    private void report_cancel_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_report_cancel_BActionPerformed
+       // report_BActionPerformed(evt);
+    }//GEN-LAST:event_report_cancel_BActionPerformed
 
     /**
      * @param args the command line arguments

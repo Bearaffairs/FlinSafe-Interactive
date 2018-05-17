@@ -514,6 +514,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="cancel"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="report_cancel_BActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="report_submit_B">
               <Properties>
