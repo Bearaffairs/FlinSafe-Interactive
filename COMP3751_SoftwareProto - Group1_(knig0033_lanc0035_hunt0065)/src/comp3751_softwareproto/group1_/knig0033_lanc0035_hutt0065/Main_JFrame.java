@@ -26,7 +26,8 @@ public class Main_JFrame extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         security_B = new javax.swing.JButton();
         report_B = new javax.swing.JButton();
@@ -47,9 +48,7 @@ public class Main_JFrame extends javax.swing.JFrame {
         logintosystem_b = new javax.swing.JButton();
         password = new javax.swing.JLabel();
         username = new javax.swing.JLabel();
-        logoutofsystem_B = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
         security_pan = new javax.swing.JPanel();
         callsecurity_B = new javax.swing.JButton();
         medicalass_B = new javax.swing.JButton();
@@ -73,7 +72,6 @@ public class Main_JFrame extends javax.swing.JFrame {
         report_Loc_Label = new javax.swing.JLabel();
         report_ToD_Label = new javax.swing.JLabel();
         report_loc_JComboBox = new javax.swing.JComboBox<>();
-        report_TimeCheck_JCheckBox = new javax.swing.JCheckBox();
         info_pan = new javax.swing.JPanel();
         info_text_pan = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -89,13 +87,9 @@ public class Main_JFrame extends javax.swing.JFrame {
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea5 = new javax.swing.JTextArea();
         info_Terms_B = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         info_Helpful_B = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         info_Manual_B = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
         info_FAQ_B = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
         map_pan = new javax.swing.JPanel();
         filter1_map_Check = new javax.swing.JCheckBox();
         fliter2_map_Check = new javax.swing.JCheckBox();
@@ -133,8 +127,10 @@ public class Main_JFrame extends javax.swing.JFrame {
         security_B.setOpaque(false);
         security_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/securityButtonTop/security_bMouseOver.png"))); // NOI18N
         security_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/securityButtonTop/security_bPressed.png"))); // NOI18N
-        security_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        security_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 security_BActionPerformed(evt);
             }
         });
@@ -145,8 +141,10 @@ public class Main_JFrame extends javax.swing.JFrame {
         report_B.setOpaque(false);
         report_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reportButtonTop/report_bMouseOver.png"))); // NOI18N
         report_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reportButtonTop/report_bPressed.png"))); // NOI18N
-        report_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        report_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 report_BActionPerformed(evt);
             }
         });
@@ -159,8 +157,10 @@ public class Main_JFrame extends javax.swing.JFrame {
         info_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/informationButtonTop/info_bMouseOver.png"))); // NOI18N
         info_B.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/informationButtonTop/info_bPressed.png"))); // NOI18N
         info_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/informationButtonTop/info_bPressed.png"))); // NOI18N
-        info_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        info_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 info_BActionPerformed(evt);
             }
         });
@@ -171,8 +171,10 @@ public class Main_JFrame extends javax.swing.JFrame {
         events_B.setOpaque(false);
         events_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/eventsButtonTop/events_bMouseOver.png"))); // NOI18N
         events_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/eventsButtonTop/events_bPressed.png"))); // NOI18N
-        events_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        events_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 events_BActionPerformed(evt);
             }
         });
@@ -183,8 +185,10 @@ public class Main_JFrame extends javax.swing.JFrame {
         map_B.setOpaque(false);
         map_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mapButtonTop/map_bMouseOver.png"))); // NOI18N
         map_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mapButtonTop/map_bPressed.png"))); // NOI18N
-        map_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        map_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 map_BActionPerformed(evt);
             }
         });
@@ -197,8 +201,10 @@ public class Main_JFrame extends javax.swing.JFrame {
         login_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbuttonTop/login_bPressed.png"))); // NOI18N
         login_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbuttonTop/login_bMouseOver.png"))); // NOI18N
         login_B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbuttonTop/login_bPressed.png"))); // NOI18N
-        login_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        login_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 login_BActionPerformed(evt);
             }
         });
@@ -213,8 +219,10 @@ public class Main_JFrame extends javax.swing.JFrame {
         event_scroll_login_Text.setEditable(false);
         event_scroll_login_Text.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         event_scroll_login_Text.setText("Scrolling events");
-        event_scroll_login_Text.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        event_scroll_login_Text.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 event_scroll_login_TextActionPerformed(evt);
             }
         });
@@ -276,9 +284,16 @@ public class Main_JFrame extends javax.swing.JFrame {
         username_Field.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
         logintosystem_b.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        logintosystem_b.setText("LOGIN");
-        logintosystem_b.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        logintosystem_b.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Login/base500x138.png"))); // NOI18N
+        logintosystem_b.setMaximumSize(new java.awt.Dimension(200, 60));
+        logintosystem_b.setMinimumSize(new java.awt.Dimension(200, 60));
+        logintosystem_b.setPreferredSize(new java.awt.Dimension(200, 60));
+        logintosystem_b.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Login/bPressed500x138.png"))); // NOI18N
+        logintosystem_b.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Login/bMouseOver500x138.png"))); // NOI18N
+        logintosystem_b.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 logintosystem_bActionPerformed(evt);
             }
         });
@@ -289,27 +304,14 @@ public class Main_JFrame extends javax.swing.JFrame {
         username.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         username.setText("Username");
 
-        logoutofsystem_B.setText("jButton1");
-        logoutofsystem_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                logoutofsystem_BActionPerformed(evt);
-            }
-        });
-
         jTextField1.setEditable(false);
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextField1.setText("Example: blog0001");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jTextField2.setEditable(false);
-        jTextField2.setText("Example: Blog0001");
-        jTextField2.setToolTipText("");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
             }
         });
 
@@ -327,21 +329,16 @@ public class Main_JFrame extends javax.swing.JFrame {
                                 .addComponent(username_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(login_panLayout.createSequentialGroup()
                                 .addGap(205, 205, 205)
-                                .addComponent(password))))
+                                .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(password)))))
                     .addGroup(login_panLayout.createSequentialGroup()
                         .addGap(195, 195, 195)
                         .addComponent(username))
                     .addGroup(login_panLayout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addComponent(logintosystem_b)
-                        .addGap(18, 18, 18)
-                        .addComponent(logoutofsystem_B, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(login_panLayout.createSequentialGroup()
-                        .addGap(239, 239, 239)
-                        .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
+                        .addGap(191, 191, 191)
+                        .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                 .addComponent(rightside_login_pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44))
         );
@@ -357,16 +354,12 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addComponent(username_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                         .addComponent(password)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(password_Field, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(81, 81, 81)
-                        .addGroup(login_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(logintosystem_b, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(logoutofsystem_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(logintosystem_b, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(rightside_login_pan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(51, 51, 51))
         );
@@ -377,31 +370,53 @@ public class Main_JFrame extends javax.swing.JFrame {
         security_pan.setPreferredSize(new java.awt.Dimension(1200, 562));
 
         callsecurity_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        callsecurity_B.setText("Call Security");
-        callsecurity_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        callsecurity_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Call_Security/base500x138.png"))); // NOI18N
+        callsecurity_B.setMaximumSize(new java.awt.Dimension(500, 125));
+        callsecurity_B.setMinimumSize(new java.awt.Dimension(500, 125));
+        callsecurity_B.setPreferredSize(new java.awt.Dimension(500, 125));
+        callsecurity_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Call_Security/bPressed500x138.png"))); // NOI18N
+        callsecurity_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Call_Security/bMouseOver500x138.png"))); // NOI18N
+        callsecurity_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 callsecurity_BActionPerformed(evt);
             }
         });
 
         medicalass_B.setFont(new java.awt.Font("Tahoma", 0, 34)); // NOI18N
-        medicalass_B.setText("Medical Assistance");
-        medicalass_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        medicalass_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Medical_Assistance/base500x138.png"))); // NOI18N
+        medicalass_B.setMaximumSize(new java.awt.Dimension(500, 125));
+        medicalass_B.setMinimumSize(new java.awt.Dimension(500, 125));
+        medicalass_B.setPreferredSize(new java.awt.Dimension(500, 125));
+        medicalass_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Medical_Assistance/bPressed500x138.png"))); // NOI18N
+        medicalass_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Medical_Assistance/bMouseOver500x138.png"))); // NOI18N
+        medicalass_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 medicalass_BActionPerformed(evt);
             }
         });
 
         emergen_B.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        emergen_B.setText("Emergency Services");
-        emergen_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        emergen_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Energency_Services/base500x138.png"))); // NOI18N
+        emergen_B.setMaximumSize(new java.awt.Dimension(500, 125));
+        emergen_B.setMinimumSize(new java.awt.Dimension(500, 125));
+        emergen_B.setPreferredSize(new java.awt.Dimension(500, 125));
+        emergen_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Energency_Services/bPressed500x138.png"))); // NOI18N
+        emergen_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Energency_Services/bMouseOver500x138.png"))); // NOI18N
+        emergen_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 emergen_BActionPerformed(evt);
             }
         });
 
         eventlist_security_List.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        eventlist_security_List.setModel(new javax.swing.AbstractListModel<String>() {
+        eventlist_security_List.setModel(new javax.swing.AbstractListModel<String>()
+        {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
@@ -436,15 +451,15 @@ public class Main_JFrame extends javax.swing.JFrame {
                     .addGroup(security_panLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(medicalass_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(callsecurity_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(medicalass_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(callsecurity_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(greenbar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(emergen_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(emergen_B, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(59, 59, 59))
                     .addGroup(security_panLayout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addComponent(securityAva_security_Label)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(security_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(eventlist_security_JScrollPane)
                     .addComponent(info_security_JScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
@@ -489,20 +504,31 @@ public class Main_JFrame extends javax.swing.JFrame {
         report_PleaseEnter_Label.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         report_PleaseEnter_Label.setText("Please enter the details of the incident");
 
-        report_cancel_B.setText("cancel");
-        report_cancel_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        report_cancel_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Cancel/base500x138.png"))); // NOI18N
+        report_cancel_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Cancel/bPressed500x138.png"))); // NOI18N
+        report_cancel_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Cancel/bMouseOver500x138.png"))); // NOI18N
+        report_cancel_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 report_cancel_BActionPerformed(evt);
             }
         });
 
-        report_submit_B.setText("submit");
+        report_submit_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/submit/base500x138.png"))); // NOI18N
+        report_submit_B.setMaximumSize(new java.awt.Dimension(200, 90));
+        report_submit_B.setMinimumSize(new java.awt.Dimension(200, 90));
+        report_submit_B.setPreferredSize(new java.awt.Dimension(200, 90));
+        report_submit_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/submit/bPressed500x138.png"))); // NOI18N
+        report_submit_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/submit/bMouseOver500x138.png"))); // NOI18N
 
-        report_TextField_Text.setText("jTextField1");
+        report_TextField_Text.setText("HH:MM");
 
         report_typeincident_JComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        report_typeincident_JComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        report_typeincident_JComboBox.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 report_typeincident_JComboBoxActionPerformed(evt);
             }
         });
@@ -517,16 +543,11 @@ public class Main_JFrame extends javax.swing.JFrame {
         report_ToD_Label.setText("Time of day");
 
         report_loc_JComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        report_loc_JComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        report_loc_JComboBox.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 report_loc_JComboBoxActionPerformed(evt);
-            }
-        });
-
-        report_TimeCheck_JCheckBox.setText("jCheckBox1");
-        report_TimeCheck_JCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                report_TimeCheck_JCheckBoxActionPerformed(evt);
             }
         });
 
@@ -546,7 +567,6 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addGroup(report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(report_TextField_Text)
                             .addComponent(report_loc_JComboBox, 0, 370, Short.MAX_VALUE)
-                            .addComponent(report_TimeCheck_JCheckBox, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(report_typeincident_JComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(report_panLayout.createSequentialGroup()
                                 .addGap(116, 116, 116)
@@ -582,9 +602,7 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addComponent(report_ToD_Label)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(report_TextField_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(report_TimeCheck_JCheckBox)
-                        .addGap(63, 63, 63)
+                        .addGap(93, 93, 93)
                         .addGroup(report_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(report_submit_B, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(report_cancel_B, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -689,25 +707,61 @@ public class Main_JFrame extends javax.swing.JFrame {
                 .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        info_Terms_B.setText("jButton1");
+        info_Terms_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Terms_and_Conditions/base500x138.png"))); // NOI18N
+        info_Terms_B.setMaximumSize(new java.awt.Dimension(150, 70));
+        info_Terms_B.setMinimumSize(new java.awt.Dimension(150, 70));
+        info_Terms_B.setPreferredSize(new java.awt.Dimension(150, 70));
+        info_Terms_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Terms_and_Conditions/bPressed500x138.png"))); // NOI18N
+        info_Terms_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Terms_and_Conditions/bMouseOver500x138.png"))); // NOI18N
+        info_Terms_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                info_Terms_BActionPerformed(evt);
+            }
+        });
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel4.setText("Terms and Conditions");
+        info_Helpful_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Helpful_Tips/base500x138.png"))); // NOI18N
+        info_Helpful_B.setMaximumSize(new java.awt.Dimension(150, 70));
+        info_Helpful_B.setMinimumSize(new java.awt.Dimension(150, 70));
+        info_Helpful_B.setPreferredSize(new java.awt.Dimension(150, 70));
+        info_Helpful_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Helpful_Tips/bPressed500x138.png"))); // NOI18N
+        info_Helpful_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Helpful_Tips/bMouseOver500x138.png"))); // NOI18N
+        info_Helpful_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                info_Helpful_BActionPerformed(evt);
+            }
+        });
 
-        info_Helpful_B.setText("jButton1");
+        info_Manual_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Kiosk_Manual/base500x138.png"))); // NOI18N
+        info_Manual_B.setMaximumSize(new java.awt.Dimension(150, 70));
+        info_Manual_B.setMinimumSize(new java.awt.Dimension(150, 70));
+        info_Manual_B.setPreferredSize(new java.awt.Dimension(150, 70));
+        info_Manual_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Kiosk_Manual/bPressed500x138.png"))); // NOI18N
+        info_Manual_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Kiosk_Manual/bMouseOver500x138.png"))); // NOI18N
+        info_Manual_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                info_Manual_BActionPerformed(evt);
+            }
+        });
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel7.setText("Helpful tips");
-
-        info_Manual_B.setText("jButton1");
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel9.setText("Manual");
-
-        info_FAQ_B.setText("jButton1");
-
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel10.setText("FAQ");
+        info_FAQ_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/faq/base500x138.png"))); // NOI18N
+        info_FAQ_B.setMaximumSize(new java.awt.Dimension(150, 70));
+        info_FAQ_B.setMinimumSize(new java.awt.Dimension(150, 70));
+        info_FAQ_B.setPreferredSize(new java.awt.Dimension(150, 70));
+        info_FAQ_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/faq/bPressed500x138.png"))); // NOI18N
+        info_FAQ_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/faq/bMouseOver500x138.png"))); // NOI18N
+        info_FAQ_B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                info_FAQ_BActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout info_panLayout = new javax.swing.GroupLayout(info_pan);
         info_pan.setLayout(info_panLayout);
@@ -720,23 +774,11 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addGroup(info_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(info_Helpful_B, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(info_FAQ_B, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(info_panLayout.createSequentialGroup()
-                                .addGap(56, 56, 56)
-                                .addComponent(jLabel10))
                             .addComponent(info_Manual_B, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(info_panLayout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addComponent(jLabel9))
-                    .addGroup(info_panLayout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel7))
-                    .addGroup(info_panLayout.createSequentialGroup()
                         .addGap(77, 77, 77)
-                        .addComponent(info_Terms_B, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(info_panLayout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(jLabel4)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
+                        .addComponent(info_Terms_B, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addComponent(info_text_pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -748,21 +790,13 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(info_text_pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(info_panLayout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(63, 63, 63)
                         .addComponent(info_FAQ_B, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(53, 53, 53)
                         .addComponent(info_Manual_B, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(53, 53, 53)
                         .addComponent(info_Helpful_B, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(53, 53, 53)
                         .addComponent(info_Terms_B, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -780,8 +814,10 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         fliter3_map_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter3_map_Check.setText("Fliter3");
-        fliter3_map_Check.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        fliter3_map_Check.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 fliter3_map_CheckActionPerformed(evt);
             }
         });
@@ -798,16 +834,22 @@ public class Main_JFrame extends javax.swing.JFrame {
         fliters_map_Label.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         fliters_map_Label.setText("Filters");
 
-        search_map_Form.setText("Hope and dreams");
         search_map_Form.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        search_map_Form.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        search_map_Form.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 search_map_FormActionPerformed(evt);
             }
         });
 
         search_map_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        search_map_B.setText("Search");
+        search_map_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search/base500x138.png"))); // NOI18N
+        search_map_B.setMaximumSize(new java.awt.Dimension(97, 46));
+        search_map_B.setMinimumSize(new java.awt.Dimension(97, 46));
+        search_map_B.setPreferredSize(new java.awt.Dimension(97, 46));
+        search_map_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search/bPressed500x138.png"))); // NOI18N
+        search_map_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search/bMouseOver500x138.png"))); // NOI18N
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/comp3751_softwareproto/group1_/knig0033_lanc0035_hutt0065/chrome_2018-05-14_16-34-48.png"))); // NOI18N
 
@@ -862,11 +904,11 @@ public class Main_JFrame extends javax.swing.JFrame {
                         .addGap(2, 2, 2))
                     .addGroup(map_panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(filter1_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fliter3_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                        .addComponent(fliter2_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                        .addComponent(fliter4_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                        .addComponent(fliter5_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                        .addComponent(fliter6_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                        .addComponent(fliter3_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(fliter2_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(fliter4_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(fliter5_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(fliter6_map_Check, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(fliters_map_Label)
                         .addComponent(search_map_B, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -890,24 +932,30 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         fliter3_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter3_events_Check.setText("Fliter3");
-        fliter3_events_Check.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        fliter3_events_Check.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 fliter3_events_CheckActionPerformed(evt);
             }
         });
 
         fliter4_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter4_events_Check.setText("Fliter5");
-        fliter4_events_Check.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        fliter4_events_Check.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 fliter4_events_CheckActionPerformed(evt);
             }
         });
 
         fliter5_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter5_events_Check.setText("Fliter1");
-        fliter5_events_Check.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        fliter5_events_Check.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 fliter5_events_CheckActionPerformed(evt);
             }
         });
@@ -915,19 +963,23 @@ public class Main_JFrame extends javax.swing.JFrame {
         fliter6_events_Check.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         fliter6_events_Check.setText("Fliter2");
 
-        search_events_Form.setText("Hope and dreams");
         search_events_Form.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        search_events_Form.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        search_events_Form.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 search_events_FormActionPerformed(evt);
             }
         });
 
         search_evnets_B.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        search_evnets_B.setText("Search");
+        search_evnets_B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search/base500x138.png"))); // NOI18N
+        search_evnets_B.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search/bPressed500x138.png"))); // NOI18N
+        search_evnets_B.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search/bMouseOver500x138.png"))); // NOI18N
 
         jList1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        jList1.setModel(new javax.swing.AbstractListModel<String>()
+        {
             String[] strings = { "INCIDENT | STOLEN ITEM | BAG | CAFE | 12:00PM | SUCESSFULLY FOUND | AS1924", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
@@ -1043,7 +1095,7 @@ public class Main_JFrame extends javax.swing.JFrame {
 
         //Adding panels
         base_pan.add(events_pan);
-        events_pan.setBackground(new Color(0,0,0,200));
+        //events_pan.setBackground(new Color(0,0,0,200));        
         base_pan.revalidate();
         base_pan.repaint();
     }//GEN-LAST:event_events_BActionPerformed
@@ -1055,9 +1107,8 @@ public class Main_JFrame extends javax.swing.JFrame {
     private void callsecurity_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callsecurity_BActionPerformed
         // TODO add your handling code here:
         
-        confPop confPop = new confPop();
-        confPop.newScreen();
-        
+        confPop confPop = new confPop();        
+        confPop.newScreen();         
     }//GEN-LAST:event_callsecurity_BActionPerformed
 
     private void fliter3_map_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter3_map_CheckActionPerformed
@@ -1097,10 +1148,6 @@ public class Main_JFrame extends javax.swing.JFrame {
     private void report_loc_JComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_report_loc_JComboBoxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_report_loc_JComboBoxActionPerformed
-
-    private void report_TimeCheck_JCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_report_TimeCheck_JCheckBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_report_TimeCheck_JCheckBoxActionPerformed
 
     private void fliter3_events_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fliter3_events_CheckActionPerformed
         // TODO add your handling code here:
@@ -1148,18 +1195,33 @@ public class Main_JFrame extends javax.swing.JFrame {
         System.out.println(loginBool);
     }//GEN-LAST:event_logintosystem_bActionPerformed
 
-    private void logoutofsystem_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutofsystem_BActionPerformed
-        this.loginBool = false;
-        System.out.println(loginBool);
-    }//GEN-LAST:event_logoutofsystem_BActionPerformed
-
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void info_FAQ_BActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_info_FAQ_BActionPerformed
+    {//GEN-HEADEREND:event_info_FAQ_BActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+        jTextArea4.setText("Frequently asked questions");
+    }//GEN-LAST:event_info_FAQ_BActionPerformed
+
+    private void info_Manual_BActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_info_Manual_BActionPerformed
+    {//GEN-HEADEREND:event_info_Manual_BActionPerformed
+        // TODO add your handling code here:
+        jTextArea4.setText("Display manual text here");
+    }//GEN-LAST:event_info_Manual_BActionPerformed
+
+    private void info_Helpful_BActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_info_Helpful_BActionPerformed
+    {//GEN-HEADEREND:event_info_Helpful_BActionPerformed
+        // TODO add your handling code here:
+        jTextArea4.setText("Heloful Tips");
+    }//GEN-LAST:event_info_Helpful_BActionPerformed
+
+    private void info_Terms_BActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_info_Terms_BActionPerformed
+    {//GEN-HEADEREND:event_info_Terms_BActionPerformed
+        // TODO add your handling code here:
+        jTextArea4.setText("Terms and Conditions");
+    }//GEN-LAST:event_info_Terms_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1242,11 +1304,7 @@ public class Main_JFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane info_security_JScrollPane;
     private javax.swing.JTextArea info_security_Text;
     private javax.swing.JPanel info_text_pan;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1262,11 +1320,9 @@ public class Main_JFrame extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JButton login_B;
     private javax.swing.JPanel login_pan;
     private javax.swing.JButton logintosystem_b;
-    private javax.swing.JButton logoutofsystem_B;
     private javax.swing.JButton map_B;
     private javax.swing.JPanel map_map_pan;
     private javax.swing.JPanel map_pan;
@@ -1277,7 +1333,6 @@ public class Main_JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel report_Loc_Label;
     private javax.swing.JLabel report_PleaseEnter_Label;
     private javax.swing.JTextField report_TextField_Text;
-    private javax.swing.JCheckBox report_TimeCheck_JCheckBox;
     private javax.swing.JLabel report_ToD_Label;
     private javax.swing.JLabel report_ToI_Label;
     private javax.swing.JButton report_cancel_B;
